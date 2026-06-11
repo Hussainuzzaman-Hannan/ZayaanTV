@@ -1,0 +1,3 @@
+-keep class com.bdtv.app.models.** { *; }
+-keep class androidx.media3.** { *; }
+-dontwarn androidx.media3.**

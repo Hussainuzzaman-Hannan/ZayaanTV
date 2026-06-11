@@ -1,0 +1,198 @@
+[
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\drawable_gradient_bottom.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\drawable\\gradient_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\drawable_ic_skip_previous.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\drawable\\ic_skip_previous.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\drawable_logo_bg.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\drawable\\logo_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\drawable_badge_live.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\drawable\\badge_live.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\drawable_badge_in.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\drawable\\badge_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\color_chip_bg_selector.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\color\\chip_bg_selector.xml"
+    },
+    {
+        "merged": "com.bdtv.app-merged_res-37:/layout_activity_main.xml.flat",
+        "source": "com.bdtv.app-main-39:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\drawable_ic_pause.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\drawable\\ic_pause.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\layout_activity_player.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\layout\\activity_player.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\drawable_badge_intl.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\drawable\\badge_intl.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\drawable_ic_arrow_back.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\drawable\\ic_arrow_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\drawable_splash_bg.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\drawable\\splash_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\drawable_ic_favorite_border.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\drawable\\ic_favorite_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\color_chip_text_selector.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\color\\chip_text_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\drawable_badge_islamic.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\drawable\\badge_islamic.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\drawable_chip_bg_selector.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\drawable\\chip_bg_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\drawable_badge_bd.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\drawable\\badge_bd.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\drawable_gradient_top.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\drawable\\gradient_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\drawable_ic_tv_placeholder.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\drawable\\ic_tv_placeholder.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\drawable_badge_count.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\drawable\\badge_count.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\drawable_ic_favorite_filled.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\drawable\\ic_favorite_filled.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\layout_custom_player_controls.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\layout\\custom_player_controls.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\drawable_ic_play.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\drawable\\ic_play.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\drawable_ic_skip_next.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\drawable\\ic_skip_next.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\drawable_search_bg.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\drawable\\search_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\mipmap-hdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\drawable_ic_fullscreen.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\drawable\\ic_fullscreen.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\drawable_badge_live_large.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\drawable\\badge_live_large.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\mipmap-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\drawable_logo_bg_dark.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\drawable\\logo_bg_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\layout_item_channel.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\layout\\item_channel.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-merged_res-37:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\9.0-milestone-1\\com.bdtv.app-main-39:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "com.bdtv.app-merged_res-37:/layout_activity_splash.xml.flat",
+        "source": "com.bdtv.app-main-39:/layout/activity_splash.xml"
+    }
+]

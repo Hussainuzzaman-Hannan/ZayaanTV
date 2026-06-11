@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent_blue">#4ECDC4</color>
+    <color name="accent_gold">#FFD700</color>
+    <color name="accent_green">#00C896</color>
+    <color name="accent_red">#FF4757</color>
+    <color name="badge_bd">#006A4E</color>
+    <color name="badge_in">#FF9933</color>
+    <color name="badge_intl">#1565C0</color>
+    <color name="badge_islamic">#1B5E20</color>
+    <color name="bg_card">#16213E</color>
+    <color name="bg_dark">#0D0D0D</color>
+    <color name="bg_surface">#1A1A2E</color>
+    <color name="colorAccent">#00C896</color>
+    <color name="colorPrimary">#1A1A2E</color>
+    <color name="colorPrimaryDark">#0D0D0D</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#99FFFFFF</color>
+    <string name="added_to_favorites">ফেভারিটে যোগ হয়েছে</string>
+    <string name="app_name">Zayaan TV</string>
+    <string name="buffering">বাফারিং...</string>
+    <string name="channels_loaded">টি চ্যানেল লোড হয়েছে</string>
+    <string name="live">LIVE</string>
+    <string name="loading">লোড হচ্ছে...</string>
+    <string name="no_channels">কোনো চ্যানেল পাওয়া যায়নি</string>
+    <string name="pull_to_refresh">রিফ্রেশ করতে টানুন</string>
+    <string name="removed_from_favorites">ফেভারিট থেকে সরানো হয়েছে</string>
+    <string name="search_hint">চ্যানেল খুঁজুন...</string>
+    <string name="stream_error">স্ট্রিম লোড হয়নি</string>
+    <style name="Theme.BDTVApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/accent_green</item>
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <item name="android:statusBarColor">@color/bg_surface</item>
+        <item name="android:navigationBarColor">@color/bg_dark</item>
+    </style>
+    <style name="Theme.BDTVApp.Player" parent="Theme.BDTVApp">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:statusBarColor">#00000000</item>
+        <item name="android:navigationBarColor">#00000000</item>
+    </style>
+    <style name="Theme.BDTVApp.Splash" parent="Theme.BDTVApp">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

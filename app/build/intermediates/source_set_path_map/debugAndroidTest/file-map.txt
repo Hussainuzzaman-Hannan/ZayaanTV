@@ -1,0 +1,4 @@
+com.bdtv.app.test.app-androidTest-0 D:\software by hannan\BDTVApp\BDTVApp\app\build\generated\res\resValues\androidTest\debug
+com.bdtv.app.test.app-mergeDebugAndroidTestResources-1 D:\software by hannan\BDTVApp\BDTVApp\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.bdtv.app.test.app-mergeDebugAndroidTestResources-2 D:\software by hannan\BDTVApp\BDTVApp\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.bdtv.app.test.app-merged_res-3 D:\software by hannan\BDTVApp\BDTVApp\app\build\intermediates\merged_res\debugAndroidTest

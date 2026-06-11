@@ -1,0 +1,4 @@
+#Thu Jun 11 11:00:11 BDT 2026
+base.0=D\:\\software by hannan\\BDTVApp\\BDTVApp\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
+path.0=0/classes.dex
+renamed.0=classes.dex

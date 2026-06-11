@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Zayaan TV</string>
+    <string name="loading">লোড হচ্ছে...</string>
+    <string name="no_channels">কোনো চ্যানেল পাওয়া যায়নি</string>
+    <string name="search_hint">চ্যানেল খুঁজুন...</string>
+    <string name="pull_to_refresh">রিফ্রেশ করতে টানুন</string>
+    <string name="live">LIVE</string>
+    <string name="buffering">বাফারিং...</string>
+    <string name="stream_error">স্ট্রিম লোড হয়নি</string>
+    <string name="added_to_favorites">ফেভারিটে যোগ হয়েছে</string>
+    <string name="removed_from_favorites">ফেভারিট থেকে সরানো হয়েছে</string>
+    <string name="channels_loaded">টি চ্যানেল লোড হয়েছে</string>
+</resources>
