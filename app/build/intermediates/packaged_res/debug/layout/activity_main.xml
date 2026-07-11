@@ -15,24 +15,33 @@
         android:background="@color/bg_surface"
         android:elevation="4dp">
 
-        <LinearLayout
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:paddingHorizontal="16dp">
+            android:background="@color/bg_surface">
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="📺 Zayaan TV"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="@color/text_primary" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
 
-        </LinearLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="📺 Zayaan TV"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary" />
 
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- Search -->
         <androidx.appcompat.widget.SearchView
             android:id="@+id/searchView"
             android:layout_width="match_parent"
@@ -45,6 +54,7 @@
             app:queryBackground="@null"
             app:searchHintIcon="@null" />
 
+        <!-- Category Chips -->
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -63,7 +73,7 @@
 
     </LinearLayout>
 
-    <!-- Content Area -->
+    <!-- Content -->
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -83,14 +93,14 @@
 
         </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
-        <!-- Loading/Status overlay -->
+        <!-- Loading overlay -->
         <LinearLayout
+            android:id="@+id/loadingLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center"
-            android:visibility="gone"
-            android:id="@+id/loadingLayout">
+            android:visibility="gone">
 
             <ProgressBar
                 android:id="@+id/progressBar"
@@ -103,7 +113,6 @@
                 android:id="@+id/tvStatus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=""
                 android:textColor="@color/text_secondary"
                 android:textSize="14sp"
                 android:gravity="center"

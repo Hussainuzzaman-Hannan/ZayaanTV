@@ -2,12 +2,15 @@ package com.bdtv.app.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
@@ -43,6 +46,13 @@ public class MainActivity extends AppCompatActivity implements ChannelAdapter.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Toolbar সেটআপ
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayShowTitleEnabled(false);
+        }
+
         channelManager = ChannelManager.getInstance(this);
         initViews();
         setupRecyclerView();
@@ -52,14 +62,37 @@ public class MainActivity extends AppCompatActivity implements ChannelAdapter.On
         loadChannels(false);
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        menu.add(0, 1, 0, "⚙️ সেটিংস")
+                .setIcon(R.drawable.ic_settings)
+                .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == 1) {
+            startActivity(new Intent(this, SettingsActivity.class));
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    // Settings থেকে ফিরলে রিলোড
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
     private void initViews() {
-        recyclerView = findViewById(R.id.recyclerView);
-        progressBar = findViewById(R.id.progressBar);
-        tvStatus = findViewById(R.id.tvStatus);
+        recyclerView  = findViewById(R.id.recyclerView);
+        progressBar   = findViewById(R.id.progressBar);
+        tvStatus      = findViewById(R.id.tvStatus);
         loadingLayout = findViewById(R.id.loadingLayout);
-        swipeRefresh = findViewById(R.id.swipeRefresh);
-        chipGroup = findViewById(R.id.chipGroup);
-        searchView = findViewById(R.id.searchView);
+        swipeRefresh  = findViewById(R.id.swipeRefresh);
+        chipGroup     = findViewById(R.id.chipGroup);
+        searchView    = findViewById(R.id.searchView);
     }
 
     private void setupRecyclerView() {
@@ -69,40 +102,27 @@ public class MainActivity extends AppCompatActivity implements ChannelAdapter.On
     }
 
     private void setupChips() {
-        String[] categories = {"All", "Bangladesh", "India", "Islamic", "International", "Favorites"};
-        String[] icons      = {"🌐",  "🇧🇩",         "🇮🇳",   "☪️",      "📡",            "⭐"};
+        String[] labels = {"🌐 All", "⚽ World Cup", "🇧🇩 Bangladesh", "🇮🇳 India", "☪️ Islamic", "📡 International", "⭐ Favorites"};
+        String[] keys   = {"All",    "World Cup",    "Bangladesh",     "India",    "Islamic",    "International",    "Favorites"};
 
-        for (int i = 0; i < categories.length; i++) {
+        for (int i = 0; i < labels.length; i++) {
             Chip chip = new Chip(this);
-            chip.setText(icons[i] + " " + categories[i]);
+            chip.setText(labels[i]);
             chip.setCheckable(true);
             chip.setChecked(i == 0);
             chip.setTextColor(getColorStateList(R.color.chip_text_selector));
             chip.setChipBackgroundColorResource(R.color.chip_bg_selector);
             chip.setChipStrokeColorResource(R.color.chip_bg_selector);
-            final String cat = categories[i];
-            chip.setOnClickListener(v -> {
-                currentCategory = cat;
-                applyFilters();
-            });
+            final String key = keys[i];
+            chip.setOnClickListener(v -> { currentCategory = key; applyFilters(); });
             chipGroup.addView(chip);
         }
     }
 
     private void setupSearch() {
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-                currentQuery = query;
-                applyFilters();
-                return true;
-            }
-            @Override
-            public boolean onQueryTextChange(String newText) {
-                currentQuery = newText;
-                applyFilters();
-                return true;
-            }
+            @Override public boolean onQueryTextSubmit(String q) { currentQuery = q; applyFilters(); return true; }
+            @Override public boolean onQueryTextChange(String q) { currentQuery = q; applyFilters(); return true; }
         });
     }
 
@@ -112,39 +132,64 @@ public class MainActivity extends AppCompatActivity implements ChannelAdapter.On
     }
 
     private void loadChannels(boolean forceRefresh) {
+        // বিশ্বকাপ চ্যানেল সবসময় আগে
+        List<Channel> wcChannels = ChannelManager.getWorldCupChannels();
+
+        // Custom URL চেক
+        String customUrl = SettingsActivity.getCustomUrl(this);
+
+        // সোর্স তৈরি
+        String[] sources  = ChannelManager.M3U_SOURCES;
+        String[] countries = ChannelManager.SOURCE_COUNTRIES;
+
+        // Custom URL থাকলে শেষে যোগ করো
+        if (!customUrl.isEmpty()) {
+            String[] newSources   = new String[sources.length + 1];
+            String[] newCountries = new String[countries.length + 1];
+            System.arraycopy(sources,   0, newSources,   0, sources.length);
+            System.arraycopy(countries, 0, newCountries, 0, countries.length);
+            newSources  [sources.length]   = customUrl;
+            newCountries[countries.length] = "Bangladesh";
+            sources   = newSources;
+            countries = newCountries;
+        }
+
         if (!forceRefresh && channelManager.isCacheValid()) {
             List<Channel> cached = channelManager.getCachedChannels();
             if (!cached.isEmpty()) {
-                allChannels = cached;
+                allChannels = new ArrayList<>();
+                allChannels.addAll(wcChannels);
+                allChannels.addAll(cached);
                 applyFilters();
                 return;
             }
         }
 
         showLoading(true, "চ্যানেল লোড হচ্ছে...");
+        final String[] finalSources   = sources;
+        final String[] finalCountries = countries;
 
-        M3UFetcher.fetchAllSources(ChannelManager.M3U_SOURCES, ChannelManager.SOURCE_COUNTRIES, new M3UFetcher.FetchCallback() {
+        M3UFetcher.fetchAllSources(finalSources, finalCountries, new M3UFetcher.FetchCallback() {
             @Override
             public void onSuccess(List<Channel> channels) {
-                allChannels = channels;
                 channelManager.saveChannels(channels);
+                allChannels = new ArrayList<>();
+                allChannels.addAll(wcChannels);
+                allChannels.addAll(channels);
                 applyFilters();
                 showLoading(false, null);
                 Toast.makeText(MainActivity.this,
-                        channels.size() + " টি চ্যানেল লোড হয়েছে ✅", Toast.LENGTH_SHORT).show();
+                        "✅ " + allChannels.size() + " টি চ্যানেল লোড হয়েছে", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onError(String error) {
                 List<Channel> cached = channelManager.getCachedChannels();
-                if (!cached.isEmpty()) {
-                    allChannels = cached;
-                    applyFilters();
-                    showLoading(false, null);
-                } else {
-                    showLoading(true, error);
-                    swipeRefresh.setRefreshing(false);
-                }
+                allChannels = new ArrayList<>();
+                allChannels.addAll(wcChannels);
+                if (!cached.isEmpty()) allChannels.addAll(cached);
+                applyFilters();
+                showLoading(false, null);
             }
 
             @Override
@@ -160,24 +205,19 @@ public class MainActivity extends AppCompatActivity implements ChannelAdapter.On
         displayChannels = filtered;
         adapter.updateChannels(displayChannels);
         swipeRefresh.setRefreshing(false);
-
         if (displayChannels.isEmpty() && !allChannels.isEmpty()) {
             showLoading(true, "কোনো চ্যানেল পাওয়া যায়নি");
             progressBar.setVisibility(View.GONE);
-        } else if (!displayChannels.isEmpty()) {
+        } else {
             showLoading(false, null);
         }
     }
 
     private void showLoading(boolean show, String message) {
         loadingLayout.setVisibility(show ? View.VISIBLE : View.GONE);
-        progressBar.setVisibility(show && message != null && message.contains("%") || (show && !message.contains("পাওয়া")) ? View.VISIBLE : View.GONE);
-        if (message != null) {
-            tvStatus.setVisibility(View.VISIBLE);
-            tvStatus.setText(message);
-        } else {
-            tvStatus.setVisibility(View.GONE);
-        }
+        progressBar.setVisibility(show && message != null && !message.contains("পাওয়া") ? View.VISIBLE : View.GONE);
+        if (message != null) { tvStatus.setVisibility(View.VISIBLE); tvStatus.setText(message); }
+        else tvStatus.setVisibility(View.GONE);
         if (!show) swipeRefresh.setRefreshing(false);
     }
 
@@ -185,8 +225,9 @@ public class MainActivity extends AppCompatActivity implements ChannelAdapter.On
     public void onChannelClick(Channel channel, int position) {
         Intent intent = new Intent(this, PlayerActivity.class);
         intent.putExtra("channel_name", channel.getName());
-        intent.putExtra("stream_url", channel.getStreamUrl());
-        intent.putExtra("logo_url", channel.getLogoUrl());
+        intent.putExtra("stream_url",   channel.getStreamUrl());
+        intent.putExtra("logo_url",     channel.getLogoUrl());
+        intent.putExtra("channel_index", position);
         startActivity(intent);
     }
 
@@ -194,9 +235,8 @@ public class MainActivity extends AppCompatActivity implements ChannelAdapter.On
     public void onFavoriteClick(Channel channel, int position) {
         channelManager.toggleFavorite(channel.getName());
         adapter.notifyItemChanged(position);
-        boolean isFav = channelManager.isFavorite(channel.getName());
         Toast.makeText(this,
-                isFav ? "⭐ ফেভারিটে যোগ হয়েছে" : "ফেভারিট থেকে সরানো হয়েছে",
+                channelManager.isFavorite(channel.getName()) ? "⭐ ফেভারিটে যোগ হয়েছে" : "ফেভারিট থেকে সরানো হয়েছে",
                 Toast.LENGTH_SHORT).show();
     }
 }

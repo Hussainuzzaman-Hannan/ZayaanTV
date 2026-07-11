@@ -3067,6 +3067,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable aspect_label_bg
 drawable avd_hide_password
 drawable avd_show_password
 drawable badge_bd
@@ -3084,7 +3085,10 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable card_bg
 drawable chip_bg_selector
+drawable control_btn_bg
+drawable control_btn_bg_accent
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -3173,6 +3177,7 @@ drawable gradient_bottom
 drawable gradient_top
 drawable ic_arrow_back
 drawable ic_arrow_back_black_24
+drawable ic_aspect_ratio
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
 drawable ic_favorite_border
@@ -3189,6 +3194,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_pause
 drawable ic_play
 drawable ic_search_black_24
+drawable ic_settings
 drawable ic_skip_next
 drawable ic_skip_previous
 drawable ic_tv_placeholder
@@ -3366,12 +3372,20 @@ id beginning
 id bestChoice
 id blocking
 id bottom
+id bottomOverlay
 id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnAspectRatio
 id btnBack
+id btnClearUrl
 id btnFavorite
+id btnNext
+id btnPasteUrl
+id btnPlayPause
+id btnPrevious
+id btnSaveUrl
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3455,6 +3469,7 @@ id endToStart
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
+id etCustomUrl
 id exitUntilCollapsed
 id exo_ad_overlay
 id exo_artwork
@@ -3808,7 +3823,9 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toolbar
 id top
+id topOverlay
 id topPanel
 id touch_outside
 id transitionToEnd
@@ -3819,10 +3836,12 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvAspectLabel
 id tvBuffering
 id tvCategory
 id tvChannelName
 id tvCountryBadge
+id tvHint
 id tvStatus
 id unchecked
 id uniform
@@ -3968,6 +3987,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout activity_player
+layout activity_settings
 layout activity_splash
 layout custom_dialog
 layout custom_player_controls

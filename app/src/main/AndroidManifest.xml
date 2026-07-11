@@ -35,6 +35,11 @@
             android:screenOrientation="landscape"
             android:theme="@style/Theme.BDTVApp.Player" />
 
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:exported="false"
+            android:label="সেটিংস" />
+
     </application>
 
 </manifest>
