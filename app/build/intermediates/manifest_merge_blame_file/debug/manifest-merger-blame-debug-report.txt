@@ -9,157 +9,162 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:4:5-67
-11-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:4:22-64
+11-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:3:5-67
+11-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:3:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:5:5-79
-12-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:5:22-76
+12-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:4:5-79
+12-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:4:22-76
 13    <uses-permission android:name="android.permission.WAKE_LOCK" />
-13-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:6:5-68
-13-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:6:22-65
+13-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:5:5-68
+13-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:5:22-65
 14
 15    <permission
-15-->[androidx.core:core:1.9.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\b3329962f4aa65c16b5c26083ff650ae\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+15-->[androidx.core:core:1.9.0] C:\Users\kanda\.gradle\caches\transforms-3\a309491863f1cad1388d82071cb60f8c\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
 16        android:name="com.bdtv.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-16-->[androidx.core:core:1.9.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\b3329962f4aa65c16b5c26083ff650ae\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+16-->[androidx.core:core:1.9.0] C:\Users\kanda\.gradle\caches\transforms-3\a309491863f1cad1388d82071cb60f8c\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
 17        android:protectionLevel="signature" />
-17-->[androidx.core:core:1.9.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\b3329962f4aa65c16b5c26083ff650ae\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+17-->[androidx.core:core:1.9.0] C:\Users\kanda\.gradle\caches\transforms-3\a309491863f1cad1388d82071cb60f8c\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
 18
 19    <uses-permission android:name="com.bdtv.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-19-->[androidx.core:core:1.9.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\b3329962f4aa65c16b5c26083ff650ae\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
-19-->[androidx.core:core:1.9.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\b3329962f4aa65c16b5c26083ff650ae\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+19-->[androidx.core:core:1.9.0] C:\Users\kanda\.gradle\caches\transforms-3\a309491863f1cad1388d82071cb60f8c\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+19-->[androidx.core:core:1.9.0] C:\Users\kanda\.gradle\caches\transforms-3\a309491863f1cad1388d82071cb60f8c\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 20
 21    <application
-21-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:8:5-43:19
+21-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:7:5-36:19
 22        android:allowBackup="true"
-22-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:9:9-35
+22-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:8:9-35
 23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-23-->[androidx.core:core:1.9.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\b3329962f4aa65c16b5c26083ff650ae\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+23-->[androidx.core:core:1.9.0] C:\Users\kanda\.gradle\caches\transforms-3\a309491863f1cad1388d82071cb60f8c\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 24        android:debuggable="true"
 25        android:extractNativeLibs="true"
 26        android:icon="@mipmap/ic_launcher"
-26-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:10:9-43
+26-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:9:9-43
 27        android:label="@string/app_name"
-27-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:11:9-41
+27-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:10:9-41
 28        android:roundIcon="@mipmap/ic_launcher_round"
-28-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:12:9-54
+28-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:11:9-54
 29        android:supportsRtl="true"
-29-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:13:9-35
-30        android:theme="@style/Theme.BDTVApp"
-30-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:14:9-45
-31        android:usesCleartextTraffic="true" >
-31-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:15:9-44
-32        <activity
-32-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:17:9-25:20
-33            android:name="com.bdtv.app.activities.SplashActivity"
-33-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:18:13-54
-34            android:exported="true"
-34-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:19:13-36
-35            android:theme="@style/Theme.BDTVApp.Splash" >
-35-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:20:13-56
-36            <intent-filter>
-36-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:21:13-24:29
-37                <action android:name="android.intent.action.MAIN" />
-37-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:22:17-69
-37-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:22:25-66
-38
-39                <category android:name="android.intent.category.LAUNCHER" />
-39-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:23:17-77
-39-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:23:27-74
-40            </intent-filter>
-41        </activity>
-42        <activity
-42-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:27:9-29:40
-43            android:name="com.bdtv.app.activities.MainActivity"
-43-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:28:13-52
-44            android:exported="false" />
-44-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:29:13-37
-45        <activity
-45-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:31:9-36:59
-46            android:name="com.bdtv.app.activities.PlayerActivity"
-46-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:32:13-54
-47            android:configChanges="orientation|screenSize|keyboardHidden"
-47-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:34:13-74
-48            android:exported="false"
-48-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:33:13-37
-49            android:screenOrientation="landscape"
-49-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:35:13-50
-50            android:theme="@style/Theme.BDTVApp.Player" />
-50-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:36:13-56
-51        <activity
-51-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:38:9-41:38
-52            android:name="com.bdtv.app.activities.SettingsActivity"
-52-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:39:13-56
-53            android:exported="false"
-53-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:40:13-37
-54            android:label="সেটিংস" />
-54-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:41:13-35
-55
-56        <provider
-56-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\bfb15ab6fd1793669e378f4db443685a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-57            android:name="androidx.startup.InitializationProvider"
-57-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\bfb15ab6fd1793669e378f4db443685a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
-58            android:authorities="com.bdtv.app.androidx-startup"
-58-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\bfb15ab6fd1793669e378f4db443685a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
-59            android:exported="false" >
-59-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\bfb15ab6fd1793669e378f4db443685a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
-60            <meta-data
-60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\bfb15ab6fd1793669e378f4db443685a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-61                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\bfb15ab6fd1793669e378f4db443685a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
-62                android:value="androidx.startup" />
-62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\bfb15ab6fd1793669e378f4db443685a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
-63            <meta-data
-63-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\1809455332fe8a0709706312db7d59c7\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
-64                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-64-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\1809455332fe8a0709706312db7d59c7\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
-65                android:value="androidx.startup" />
-65-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\1809455332fe8a0709706312db7d59c7\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
-66            <meta-data
-66-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
-67                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-67-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
-68                android:value="androidx.startup" />
-68-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
-69        </provider>
-70
-71        <receiver
-71-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
-72            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-72-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
-73            android:directBootAware="false"
-73-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
-74            android:enabled="true"
-74-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
-75            android:exported="true"
-75-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
-76            android:permission="android.permission.DUMP" >
-76-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
-77            <intent-filter>
-77-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
-78                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-78-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-78-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
-79            </intent-filter>
-80            <intent-filter>
-80-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
-81                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-81-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-81-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
-82            </intent-filter>
-83            <intent-filter>
-83-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
-84                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-84-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-84-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
-85            </intent-filter>
-86            <intent-filter>
-86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
-87                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\9.0-milestone-1\transforms\6cd0a41eacece644b8d451017fc0f060\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
-88            </intent-filter>
-89        </receiver>
-90    </application>
-91
-92</manifest>
+29-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:12:9-35
+30        android:testOnly="true"
+31        android:theme="@style/Theme.BDTVApp"
+31-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:13:9-45
+32        android:usesCleartextTraffic="true" >
+32-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:14:9-44
+33        <activity
+33-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:16:9-22:20
+34            android:name="com.bdtv.app.activities.SplashActivity"
+34-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:16:19-60
+35            android:exported="true"
+35-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:16:61-84
+36            android:theme="@style/Theme.BDTVApp.Splash" >
+36-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:17:13-56
+37            <intent-filter>
+37-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:18:13-21:29
+38                <action android:name="android.intent.action.MAIN" />
+38-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:19:17-68
+38-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:19:25-66
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:20:17-76
+40-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:20:27-74
+41            </intent-filter>
+42        </activity>
+43        <activity
+43-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:24:9-85
+44            android:name="com.bdtv.app.activities.MainActivity"
+44-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:24:19-58
+45            android:exported="false" />
+45-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:24:59-83
+46
+47        <!-- PiP সাপোর্ট সহ PlayerActivity -->
+48        <activity
+48-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:27:9-31:58
+49            android:name="com.bdtv.app.activities.PlayerActivity"
+49-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:27:19-60
+50            android:configChanges="orientation|screenSize|keyboardHidden|screenLayout|smallestScreenSize"
+50-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:28:13-106
+51            android:exported="false"
+51-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:27:61-85
+52            android:screenOrientation="landscape"
+52-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:29:13-50
+53            android:supportsPictureInPicture="true"
+53-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:30:13-52
+54            android:theme="@style/Theme.BDTVApp.Player" />
+54-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:31:13-56
+55        <activity
+55-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:33:9-34:37
+56            android:name="com.bdtv.app.activities.SettingsActivity"
+56-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:33:19-62
+57            android:exported="false"
+57-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:33:63-87
+58            android:label="সেটিংস" />
+58-->D:\software by hannan\BDTVApp\BDTVApp\app\src\main\AndroidManifest.xml:34:13-35
+59
+60        <provider
+60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kanda\.gradle\caches\transforms-3\6db5aa862a49de8667f2a7b9b0bf2022\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+61            android:name="androidx.startup.InitializationProvider"
+61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kanda\.gradle\caches\transforms-3\6db5aa862a49de8667f2a7b9b0bf2022\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+62            android:authorities="com.bdtv.app.androidx-startup"
+62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kanda\.gradle\caches\transforms-3\6db5aa862a49de8667f2a7b9b0bf2022\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+63            android:exported="false" >
+63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kanda\.gradle\caches\transforms-3\6db5aa862a49de8667f2a7b9b0bf2022\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+64            <meta-data
+64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kanda\.gradle\caches\transforms-3\6db5aa862a49de8667f2a7b9b0bf2022\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+65                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kanda\.gradle\caches\transforms-3\6db5aa862a49de8667f2a7b9b0bf2022\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+66                android:value="androidx.startup" />
+66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kanda\.gradle\caches\transforms-3\6db5aa862a49de8667f2a7b9b0bf2022\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+67            <meta-data
+67-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\kanda\.gradle\caches\transforms-3\adfd241d31aa0dc8d9176e9f5dfaa47e\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+68                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+68-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\kanda\.gradle\caches\transforms-3\adfd241d31aa0dc8d9176e9f5dfaa47e\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+69                android:value="androidx.startup" />
+69-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\kanda\.gradle\caches\transforms-3\adfd241d31aa0dc8d9176e9f5dfaa47e\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+70            <meta-data
+70-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+71                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+71-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+72                android:value="androidx.startup" />
+72-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+73        </provider>
+74
+75        <receiver
+75-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+76            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+76-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+77            android:directBootAware="false"
+77-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+78            android:enabled="true"
+78-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+79            android:exported="true"
+79-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+80            android:permission="android.permission.DUMP" >
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+81            <intent-filter>
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+82                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+82-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+82-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+83            </intent-filter>
+84            <intent-filter>
+84-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+85                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+86            </intent-filter>
+87            <intent-filter>
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+88                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+89            </intent-filter>
+90            <intent-filter>
+90-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+91                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kanda\.gradle\caches\transforms-3\0db8f035745ab68a2782efc838399652\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+92            </intent-filter>
+93        </receiver>
+94    </application>
+95
+96</manifest>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -14,32 +13,25 @@
         android:theme="@style/Theme.BDTVApp"
         android:usesCleartextTraffic="true">
 
-        <activity
-            android:name=".activities.SplashActivity"
-            android:exported="true"
+        <activity android:name=".activities.SplashActivity" android:exported="true"
             android:theme="@style/Theme.BDTVApp.Splash">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".activities.MainActivity"
-            android:exported="false" />
+        <activity android:name=".activities.MainActivity" android:exported="false"/>
 
-        <activity
-            android:name=".activities.PlayerActivity"
-            android:exported="false"
-            android:configChanges="orientation|screenSize|keyboardHidden"
+        <!-- PiP সাপোর্ট সহ PlayerActivity -->
+        <activity android:name=".activities.PlayerActivity" android:exported="false"
+            android:configChanges="orientation|screenSize|keyboardHidden|screenLayout|smallestScreenSize"
             android:screenOrientation="landscape"
-            android:theme="@style/Theme.BDTVApp.Player" />
+            android:supportsPictureInPicture="true"
+            android:theme="@style/Theme.BDTVApp.Player"/>
 
-        <activity
-            android:name=".activities.SettingsActivity"
-            android:exported="false"
-            android:label="সেটিংস" />
+        <activity android:name=".activities.SettingsActivity" android:exported="false"
+            android:label="সেটিংস"/>
 
     </application>
-
 </manifest>

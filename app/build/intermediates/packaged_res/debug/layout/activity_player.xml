@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000">
 
-    <!-- Video Player -->
     <androidx.media3.ui.PlayerView
         android:id="@+id/playerView"
         android:layout_width="match_parent"
@@ -14,162 +12,100 @@
         android:focusable="true"
         app:resize_mode="fit" />
 
-    <!-- Buffering Overlay -->
-    <LinearLayout
-        android:id="@+id/loadingOverlay"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:background="#80000000"
-        android:visibility="gone">
-
-        <ProgressBar
-            android:layout_width="56dp"
-            android:layout_height="56dp"
-            android:indeterminateTint="#FFFFFF" />
-
-        <TextView
-            android:id="@+id/tvBuffering"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="বাফারিং..."
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:layout_marginTop="16dp"
-            android:gravity="center" />
-
+    <!-- Buffering -->
+    <LinearLayout android:id="@+id/loadingOverlay"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="vertical" android:gravity="center"
+        android:background="#80000000" android:visibility="gone">
+        <ProgressBar android:layout_width="56dp" android:layout_height="56dp" android:indeterminateTint="#FFFFFF"/>
+        <TextView android:id="@+id/tvBuffering"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="বাফারিং..." android:textColor="#FFFFFF" android:textSize="16sp"
+            android:layout_marginTop="16dp" android:gravity="center"/>
     </LinearLayout>
 
     <!-- TOP Overlay -->
-    <LinearLayout
-        android:id="@+id/topOverlay"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_gravity="top"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:paddingHorizontal="16dp"
-        android:background="@drawable/gradient_top"
-        android:alpha="0"
-        android:visibility="gone">
+    <LinearLayout android:id="@+id/topOverlay"
+        android:layout_width="match_parent" android:layout_height="70dp"
+        android:layout_gravity="top" android:orientation="horizontal"
+        android:gravity="center_vertical" android:paddingHorizontal="12dp"
+        android:background="@drawable/gradient_top" android:alpha="0" android:visibility="gone">
 
-        <ImageButton
-            android:id="@+id/btnBack"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+        <ImageButton android:id="@+id/btnBack"
+            android:layout_width="40dp" android:layout_height="40dp"
             android:src="@drawable/ic_arrow_back"
+            android:background="?attr/selectableItemBackgroundBorderless" android:tint="#FFFFFF"/>
+
+        <ImageView android:id="@+id/ivChannelLogo"
+            android:layout_width="36dp" android:layout_height="36dp"
+            android:layout_marginHorizontal="8dp"
+            android:src="@drawable/ic_tv_placeholder" android:background="@drawable/logo_bg_dark"/>
+
+        <TextView android:id="@+id/tvChannelName"
+            android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:textColor="#FFFFFF" android:textSize="17sp" android:textStyle="bold"
+            android:maxLines="1" android:ellipsize="end"/>
+
+        <!-- Quality বাটন -->
+        <ImageButton android:id="@+id/btnQuality"
+            android:layout_width="36dp" android:layout_height="36dp"
+            android:src="@drawable/ic_hd"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:tint="#FFFFFF" />
+            android:tint="#FFFFFF" android:layout_marginEnd="4dp"/>
 
-        <ImageView
-            android:id="@+id/ivChannelLogo"
-            android:layout_width="38dp"
-            android:layout_height="38dp"
-            android:layout_marginHorizontal="10dp"
-            android:src="@drawable/ic_tv_placeholder"
-            android:background="@drawable/logo_bg_dark" />
+        <!-- PiP বাটন -->
+        <ImageButton android:id="@+id/btnPip"
+            android:layout_width="36dp" android:layout_height="36dp"
+            android:src="@drawable/ic_pip"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:tint="#FFFFFF" android:layout_marginEnd="4dp"/>
 
-        <TextView
-            android:id="@+id/tvChannelName"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Channel Name"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:maxLines="1"
-            android:ellipsize="end" />
-
-        <!-- Aspect Ratio Toggle বাটন -->
-        <ImageButton
-            android:id="@+id/btnAspectRatio"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+        <!-- Aspect Ratio বাটন -->
+        <ImageButton android:id="@+id/btnAspectRatio"
+            android:layout_width="36dp" android:layout_height="36dp"
             android:src="@drawable/ic_aspect_ratio"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:tint="#FFFFFF"
-            android:layout_marginEnd="4dp" />
+            android:tint="#FFFFFF" android:layout_marginEnd="4dp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="🔴 LIVE"
-            android:textColor="#FFFFFF"
-            android:textSize="11sp"
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="🔴 LIVE" android:textColor="#FFFFFF" android:textSize="10sp"
             android:background="@drawable/badge_live_large"
-            android:paddingHorizontal="8dp"
-            android:paddingVertical="3dp"
-            android:layout_marginEnd="8dp" />
+            android:paddingHorizontal="7dp" android:paddingVertical="3dp" android:layout_marginEnd="4dp"/>
 
-        <ImageButton
-            android:id="@+id/btnFavorite"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+        <ImageButton android:id="@+id/btnFavorite"
+            android:layout_width="36dp" android:layout_height="36dp"
             android:src="@drawable/ic_favorite_border"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:tint="#FFFFFF" />
-
+            android:background="?attr/selectableItemBackgroundBorderless" android:tint="#FFFFFF"/>
     </LinearLayout>
 
-    <!-- BOTTOM Overlay: Previous, Play/Pause, Next -->
-    <LinearLayout
-        android:id="@+id/bottomOverlay"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_gravity="bottom"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:background="@drawable/gradient_bottom"
-        android:alpha="0"
-        android:visibility="gone">
+    <!-- BOTTOM Overlay -->
+    <LinearLayout android:id="@+id/bottomOverlay"
+        android:layout_width="match_parent" android:layout_height="100dp"
+        android:layout_gravity="bottom" android:orientation="horizontal"
+        android:gravity="center" android:background="@drawable/gradient_bottom"
+        android:alpha="0" android:visibility="gone">
 
-        <ImageButton
-            android:id="@+id/btnPrevious"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:src="@drawable/ic_skip_previous"
-            android:background="@drawable/control_btn_bg"
-            android:tint="#FFFFFF"
-            android:layout_marginHorizontal="16dp"
-            android:padding="14dp" />
+        <ImageButton android:id="@+id/btnPrevious"
+            android:layout_width="60dp" android:layout_height="60dp"
+            android:src="@drawable/ic_skip_previous" android:background="@drawable/control_btn_bg"
+            android:tint="#FFFFFF" android:layout_marginHorizontal="12dp" android:padding="13dp"/>
 
-        <ImageButton
-            android:id="@+id/btnPlayPause"
-            android:layout_width="72dp"
-            android:layout_height="72dp"
-            android:src="@drawable/ic_pause"
-            android:background="@drawable/control_btn_bg_accent"
-            android:tint="#FFFFFF"
-            android:layout_marginHorizontal="16dp"
-            android:padding="16dp" />
+        <ImageButton android:id="@+id/btnPlayPause"
+            android:layout_width="70dp" android:layout_height="70dp"
+            android:src="@drawable/ic_pause" android:background="@drawable/control_btn_bg_accent"
+            android:tint="#FFFFFF" android:layout_marginHorizontal="12dp" android:padding="15dp"/>
 
-        <ImageButton
-            android:id="@+id/btnNext"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:src="@drawable/ic_skip_next"
-            android:background="@drawable/control_btn_bg"
-            android:tint="#FFFFFF"
-            android:layout_marginHorizontal="16dp"
-            android:padding="14dp" />
-
+        <ImageButton android:id="@+id/btnNext"
+            android:layout_width="60dp" android:layout_height="60dp"
+            android:src="@drawable/ic_skip_next" android:background="@drawable/control_btn_bg"
+            android:tint="#FFFFFF" android:layout_marginHorizontal="12dp" android:padding="13dp"/>
     </LinearLayout>
 
-    <!-- Aspect Ratio Label — মাঝখানে ক্ষণিকের জন্য দেখাবে -->
-    <TextView
-        android:id="@+id/tvAspectLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="FIT"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:background="@drawable/aspect_label_bg"
-        android:paddingHorizontal="20dp"
-        android:paddingVertical="10dp"
-        android:visibility="gone" />
+    <!-- Temp Label (Aspect/Quality) -->
+    <TextView android:id="@+id/tvAspectLabel"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="center" android:textColor="#FFFFFF" android:textSize="16sp"
+        android:textStyle="bold" android:background="@drawable/aspect_label_bg"
+        android:paddingHorizontal="20dp" android:paddingVertical="10dp" android:visibility="gone"/>
 
 </FrameLayout>

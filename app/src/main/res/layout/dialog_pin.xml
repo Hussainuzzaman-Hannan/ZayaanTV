@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="20dp">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="এই চ্যানেলটি লক করা আছে। পিন দিন:" android:textColor="#CCFFFFFF"
+        android:textSize="14sp" android:layout_marginBottom="12dp"/>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etPin"
+        android:layout_width="match_parent" android:layout_height="56dp"
+        android:hint="****" android:textColorHint="#55FFFFFF" android:textColor="#FFFFFF"
+        android:inputType="numberPassword" android:maxLength="6"
+        android:gravity="center" android:textSize="24sp"
+        android:background="@drawable/search_bg" android:padding="12dp"/>
+</LinearLayout>

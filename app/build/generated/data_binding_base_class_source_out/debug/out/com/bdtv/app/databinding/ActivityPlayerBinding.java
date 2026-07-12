@@ -39,10 +39,16 @@ public final class ActivityPlayerBinding implements ViewBinding {
   public final ImageButton btnNext;
 
   @NonNull
+  public final ImageButton btnPip;
+
+  @NonNull
   public final ImageButton btnPlayPause;
 
   @NonNull
   public final ImageButton btnPrevious;
+
+  @NonNull
+  public final ImageButton btnQuality;
 
   @NonNull
   public final ImageView ivChannelLogo;
@@ -67,20 +73,22 @@ public final class ActivityPlayerBinding implements ViewBinding {
 
   private ActivityPlayerBinding(@NonNull FrameLayout rootView, @NonNull LinearLayout bottomOverlay,
       @NonNull ImageButton btnAspectRatio, @NonNull ImageButton btnBack,
-      @NonNull ImageButton btnFavorite, @NonNull ImageButton btnNext,
+      @NonNull ImageButton btnFavorite, @NonNull ImageButton btnNext, @NonNull ImageButton btnPip,
       @NonNull ImageButton btnPlayPause, @NonNull ImageButton btnPrevious,
-      @NonNull ImageView ivChannelLogo, @NonNull LinearLayout loadingOverlay,
-      @NonNull PlayerView playerView, @NonNull LinearLayout topOverlay,
-      @NonNull TextView tvAspectLabel, @NonNull TextView tvBuffering,
-      @NonNull TextView tvChannelName) {
+      @NonNull ImageButton btnQuality, @NonNull ImageView ivChannelLogo,
+      @NonNull LinearLayout loadingOverlay, @NonNull PlayerView playerView,
+      @NonNull LinearLayout topOverlay, @NonNull TextView tvAspectLabel,
+      @NonNull TextView tvBuffering, @NonNull TextView tvChannelName) {
     this.rootView = rootView;
     this.bottomOverlay = bottomOverlay;
     this.btnAspectRatio = btnAspectRatio;
     this.btnBack = btnBack;
     this.btnFavorite = btnFavorite;
     this.btnNext = btnNext;
+    this.btnPip = btnPip;
     this.btnPlayPause = btnPlayPause;
     this.btnPrevious = btnPrevious;
+    this.btnQuality = btnQuality;
     this.ivChannelLogo = ivChannelLogo;
     this.loadingOverlay = loadingOverlay;
     this.playerView = playerView;
@@ -147,6 +155,12 @@ public final class ActivityPlayerBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btnPip;
+      ImageButton btnPip = ViewBindings.findChildViewById(rootView, id);
+      if (btnPip == null) {
+        break missingId;
+      }
+
       id = R.id.btnPlayPause;
       ImageButton btnPlayPause = ViewBindings.findChildViewById(rootView, id);
       if (btnPlayPause == null) {
@@ -156,6 +170,12 @@ public final class ActivityPlayerBinding implements ViewBinding {
       id = R.id.btnPrevious;
       ImageButton btnPrevious = ViewBindings.findChildViewById(rootView, id);
       if (btnPrevious == null) {
+        break missingId;
+      }
+
+      id = R.id.btnQuality;
+      ImageButton btnQuality = ViewBindings.findChildViewById(rootView, id);
+      if (btnQuality == null) {
         break missingId;
       }
 
@@ -202,8 +222,9 @@ public final class ActivityPlayerBinding implements ViewBinding {
       }
 
       return new ActivityPlayerBinding((FrameLayout) rootView, bottomOverlay, btnAspectRatio,
-          btnBack, btnFavorite, btnNext, btnPlayPause, btnPrevious, ivChannelLogo, loadingOverlay,
-          playerView, topOverlay, tvAspectLabel, tvBuffering, tvChannelName);
+          btnBack, btnFavorite, btnNext, btnPip, btnPlayPause, btnPrevious, btnQuality,
+          ivChannelLogo, loadingOverlay, playerView, topOverlay, tvAspectLabel, tvBuffering,
+          tvChannelName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -3067,6 +3067,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable add_playlist_btn_bg
 drawable aspect_label_bg
 drawable avd_hide_password
 drawable avd_show_password
@@ -3175,14 +3176,17 @@ drawable exo_styled_controls_subtitle_on
 drawable exo_styled_controls_vr
 drawable gradient_bottom
 drawable gradient_top
+drawable ic_add_playlist
 drawable ic_arrow_back
 drawable ic_arrow_back_black_24
 drawable ic_aspect_ratio
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
+drawable ic_delete
 drawable ic_favorite_border
 drawable ic_favorite_filled
 drawable ic_fullscreen
+drawable ic_hd
 drawable ic_keyboard_black_24dp
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
@@ -3192,6 +3196,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_pause
+drawable ic_pip
 drawable ic_play
 drawable ic_search_black_24
 drawable ic_settings
@@ -3271,6 +3276,8 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable playlist_item_bg
+drawable playlist_item_selected
 drawable search_bg
 drawable splash_bg
 drawable test_level_drawable
@@ -3377,14 +3384,18 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnAddPlaylist
 id btnAspectRatio
 id btnBack
 id btnClearUrl
+id btnDeletePlaylist
 id btnFavorite
 id btnNext
 id btnPasteUrl
+id btnPip
 id btnPlayPause
 id btnPrevious
+id btnQuality
 id btnSaveUrl
 id buttonPanel
 id cache_measures
@@ -3402,7 +3413,6 @@ id chain2
 id chains
 id checkbox
 id checked
-id chipGroup
 id chronometer
 id circle_center
 id clear_text
@@ -3470,6 +3480,9 @@ id end_padder
 id enterAlways
 id enterAlwaysCollapsed
 id etCustomUrl
+id etPin
+id etPlaylistName
+id etPlaylistUrl
 id exitUntilCollapsed
 id exo_ad_overlay
 id exo_artwork
@@ -3721,6 +3734,8 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id rvEmoji
+id rvPlaylists
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3839,9 +3854,13 @@ id triangle
 id tvAspectLabel
 id tvBuffering
 id tvCategory
+id tvChannelCount
 id tvChannelName
 id tvCountryBadge
 id tvHint
+id tvPlaylistEmoji
+id tvPlaylistName
+id tvPlaylistTitle
 id tvStatus
 id unchecked
 id uniform
@@ -4006,6 +4025,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_add_playlist
+layout dialog_pin
 layout exo_legacy_player_control_view
 layout exo_list_divider
 layout exo_player_control_ffwd_button
@@ -4017,6 +4038,7 @@ layout exo_styled_settings_list_item
 layout exo_styled_sub_settings_list_item
 layout exo_track_selection_dialog
 layout item_channel
+layout item_playlist
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -4606,6 +4628,7 @@ style Base_Widget_MaterialComponents_TextView
 style CardView
 style CardView_Dark
 style CardView_Light
+style DarkDialog
 style ExoMediaButton
 style ExoMediaButton_FastForward
 style ExoMediaButton_Next

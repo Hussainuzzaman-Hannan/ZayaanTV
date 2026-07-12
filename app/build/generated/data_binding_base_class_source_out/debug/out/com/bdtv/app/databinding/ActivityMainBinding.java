@@ -16,7 +16,6 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.bdtv.app.R;
-import com.google.android.material.chip.ChipGroup;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -26,7 +25,7 @@ public final class ActivityMainBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final ChipGroup chipGroup;
+  public final LinearLayout btnAddPlaylist;
 
   @NonNull
   public final LinearLayout loadingLayout;
@@ -38,6 +37,9 @@ public final class ActivityMainBinding implements ViewBinding {
   public final RecyclerView recyclerView;
 
   @NonNull
+  public final RecyclerView rvPlaylists;
+
+  @NonNull
   public final SearchView searchView;
 
   @NonNull
@@ -47,21 +49,26 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Toolbar toolbar;
 
   @NonNull
+  public final TextView tvPlaylistTitle;
+
+  @NonNull
   public final TextView tvStatus;
 
-  private ActivityMainBinding(@NonNull LinearLayout rootView, @NonNull ChipGroup chipGroup,
+  private ActivityMainBinding(@NonNull LinearLayout rootView, @NonNull LinearLayout btnAddPlaylist,
       @NonNull LinearLayout loadingLayout, @NonNull ProgressBar progressBar,
-      @NonNull RecyclerView recyclerView, @NonNull SearchView searchView,
-      @NonNull SwipeRefreshLayout swipeRefresh, @NonNull Toolbar toolbar,
-      @NonNull TextView tvStatus) {
+      @NonNull RecyclerView recyclerView, @NonNull RecyclerView rvPlaylists,
+      @NonNull SearchView searchView, @NonNull SwipeRefreshLayout swipeRefresh,
+      @NonNull Toolbar toolbar, @NonNull TextView tvPlaylistTitle, @NonNull TextView tvStatus) {
     this.rootView = rootView;
-    this.chipGroup = chipGroup;
+    this.btnAddPlaylist = btnAddPlaylist;
     this.loadingLayout = loadingLayout;
     this.progressBar = progressBar;
     this.recyclerView = recyclerView;
+    this.rvPlaylists = rvPlaylists;
     this.searchView = searchView;
     this.swipeRefresh = swipeRefresh;
     this.toolbar = toolbar;
+    this.tvPlaylistTitle = tvPlaylistTitle;
     this.tvStatus = tvStatus;
   }
 
@@ -92,9 +99,9 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.chipGroup;
-      ChipGroup chipGroup = ViewBindings.findChildViewById(rootView, id);
-      if (chipGroup == null) {
+      id = R.id.btnAddPlaylist;
+      LinearLayout btnAddPlaylist = ViewBindings.findChildViewById(rootView, id);
+      if (btnAddPlaylist == null) {
         break missingId;
       }
 
@@ -116,6 +123,12 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.rvPlaylists;
+      RecyclerView rvPlaylists = ViewBindings.findChildViewById(rootView, id);
+      if (rvPlaylists == null) {
+        break missingId;
+      }
+
       id = R.id.searchView;
       SearchView searchView = ViewBindings.findChildViewById(rootView, id);
       if (searchView == null) {
@@ -134,14 +147,21 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvPlaylistTitle;
+      TextView tvPlaylistTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvPlaylistTitle == null) {
+        break missingId;
+      }
+
       id = R.id.tvStatus;
       TextView tvStatus = ViewBindings.findChildViewById(rootView, id);
       if (tvStatus == null) {
         break missingId;
       }
 
-      return new ActivityMainBinding((LinearLayout) rootView, chipGroup, loadingLayout, progressBar,
-          recyclerView, searchView, swipeRefresh, toolbar, tvStatus);
+      return new ActivityMainBinding((LinearLayout) rootView, btnAddPlaylist, loadingLayout,
+          progressBar, recyclerView, rvPlaylists, searchView, swipeRefresh, toolbar,
+          tvPlaylistTitle, tvStatus);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

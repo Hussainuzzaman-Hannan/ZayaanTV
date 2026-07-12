@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,112 +14,138 @@
         android:background="@color/bg_surface"
         android:elevation="4dp">
 
-        <!-- Toolbar -->
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:background="@color/bg_surface">
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:gravity="center_vertical">
-
                 <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="📺 Zayaan TV"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
+                    android:textSize="20sp" android:textStyle="bold"
                     android:textColor="@color/text_primary" />
-
             </LinearLayout>
-
         </androidx.appcompat.widget.Toolbar>
 
-        <!-- Search -->
         <androidx.appcompat.widget.SearchView
             android:id="@+id/searchView"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginHorizontal="12dp"
-            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent" android:layout_height="48dp"
+            android:layout_marginHorizontal="12dp" android:layout_marginBottom="8dp"
             android:background="@drawable/search_bg"
             app:queryHint="চ্যানেল খুঁজুন..."
             app:iconifiedByDefault="false"
             app:queryBackground="@null"
             app:searchHintIcon="@null" />
 
-        <!-- Category Chips -->
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scrollbars="none"
-            android:paddingBottom="12dp">
-
-            <com.google.android.material.chip.ChipGroup
-                android:id="@+id/chipGroup"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingHorizontal="12dp"
-                app:singleSelection="true"
-                app:selectionRequired="true" />
-
-        </HorizontalScrollView>
-
     </LinearLayout>
 
-    <!-- Content -->
-    <FrameLayout
+    <!-- Main Content: Playlist Panel (বাম) + Channel List (ডান) -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
-        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-            android:id="@+id/swipeRefresh"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="8dp"
-                android:clipToPadding="false" />
-
-        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
-
-        <!-- Loading overlay -->
+        <!-- ── বাম: Playlist Panel ── -->
         <LinearLayout
-            android:id="@+id/loadingLayout"
-            android:layout_width="match_parent"
+            android:layout_width="130dp"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:gravity="center"
-            android:visibility="gone">
+            android:background="@color/bg_surface">
 
-            <ProgressBar
-                android:id="@+id/progressBar"
-                android:layout_width="56dp"
-                android:layout_height="56dp"
-                android:indeterminateTint="@color/accent_green"
-                android:visibility="gone" />
+            <!-- Playlist লিস্ট -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvPlaylists"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingVertical="8dp"
+                android:clipToPadding="false" />
 
-            <TextView
-                android:id="@+id/tvStatus"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/text_secondary"
-                android:textSize="14sp"
+            <!-- নতুন Playlist যোগ বাটন -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:orientation="horizontal"
                 android:gravity="center"
-                android:padding="16dp"
-                android:visibility="gone" />
+                android:background="@drawable/add_playlist_btn_bg"
+                android:layout_margin="8dp"
+                android:id="@+id/btnAddPlaylist">
+                <ImageView
+                    android:layout_width="20dp" android:layout_height="20dp"
+                    android:src="@drawable/ic_add_playlist" />
+                <TextView
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text=" যোগ করুন"
+                    android:textColor="@color/accent_green"
+                    android:textSize="12sp" android:textStyle="bold"
+                    android:layout_marginStart="4dp" />
+            </LinearLayout>
 
         </LinearLayout>
 
-    </FrameLayout>
+        <!-- Divider -->
+        <View android:layout_width="1dp" android:layout_height="match_parent"
+            android:background="#22FFFFFF" />
+
+        <!-- ── ডান: Channel List ── -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <!-- চ্যানেল লোডিং label -->
+            <TextView
+                android:id="@+id/tvPlaylistTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:layout_margin="8dp"
+                android:textColor="@color/accent_green"
+                android:textSize="11sp"
+                android:background="@drawable/badge_count"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="3dp" />
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="6dp"
+                    android:clipToPadding="false" />
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+            <!-- Loading overlay -->
+            <LinearLayout
+                android:id="@+id/loadingLayout"
+                android:layout_width="match_parent" android:layout_height="match_parent"
+                android:orientation="vertical" android:gravity="center"
+                android:visibility="gone">
+                <ProgressBar android:id="@+id/progressBar"
+                    android:layout_width="48dp" android:layout_height="48dp"
+                    android:indeterminateTint="@color/accent_green"
+                    android:visibility="gone" />
+                <TextView android:id="@+id/tvStatus"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textColor="@color/text_secondary" android:textSize="13sp"
+                    android:gravity="center" android:padding="16dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
 
 </LinearLayout>
