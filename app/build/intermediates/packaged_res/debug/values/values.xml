@@ -2,20 +2,22 @@
 <resources>
     <color name="accent_blue">#4ECDC4</color>
     <color name="accent_gold">#FFD700</color>
-    <color name="accent_green">#00C896</color>
+    <color name="accent_green">#00A878</color>
     <color name="accent_red">#FF4757</color>
     <color name="badge_bd">#006A4E</color>
     <color name="badge_in">#FF9933</color>
     <color name="badge_intl">#1565C0</color>
     <color name="badge_islamic">#1B5E20</color>
-    <color name="bg_card">#16213E</color>
-    <color name="bg_dark">#0D0D0D</color>
-    <color name="bg_surface">#1A1A2E</color>
-    <color name="colorAccent">#00C896</color>
-    <color name="colorPrimary">#1A1A2E</color>
-    <color name="colorPrimaryDark">#0D0D0D</color>
-    <color name="text_primary">#FFFFFF</color>
-    <color name="text_secondary">#99FFFFFF</color>
+    <color name="bg_card">#FFFFFF</color>
+    <color name="bg_dark">#F2F4F7</color>
+    <color name="bg_surface">#FFFFFF</color>
+    <color name="colorAccent">#00A878</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#E0E0E0</color>
+    <color name="divider_color">#CCCCCC</color>
+    <color name="playlist_bg">#EFEFEF</color>
+    <color name="text_primary">#0D0D0D</color>
+    <color name="text_secondary">#555555</color>
     <string name="added_to_favorites">ফেভারিটে যোগ হয়েছে</string>
     <string name="app_name">Zayaan TV</string>
     <string name="buffering">বাফারিং...</string>
@@ -28,9 +30,9 @@
     <string name="search_hint">চ্যানেল খুঁজুন...</string>
     <string name="stream_error">স্ট্রিম লোড হয়নি</string>
     <style name="DarkDialog" parent="Theme.MaterialComponents.Dialog">
-        <item name="android:background">#1A1A2E</item>
+        <item name="android:background">@color/bg_surface</item>
         <item name="colorPrimary">@color/accent_green</item>
-        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textColor">@color/text_primary</item>
         <item name="colorAccent">@color/accent_green</item>
     </style>
     <style name="Theme.BDTVApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
@@ -40,12 +42,15 @@
         <item name="android:windowBackground">@color/bg_dark</item>
         <item name="android:statusBarColor">@color/bg_surface</item>
         <item name="android:navigationBarColor">@color/bg_dark</item>
+        
+        <item name="android:windowLightStatusBar">true</item>
     </style>
     <style name="Theme.BDTVApp.Player" parent="Theme.BDTVApp">
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:statusBarColor">#00000000</item>
         <item name="android:navigationBarColor">#00000000</item>
+        <item name="android:windowLightStatusBar">false</item>
     </style>
     <style name="Theme.BDTVApp.Splash" parent="Theme.BDTVApp">
         <item name="android:windowFullscreen">true</item>

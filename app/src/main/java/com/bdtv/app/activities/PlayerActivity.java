@@ -29,6 +29,7 @@ import com.bdtv.app.R;
 import com.bdtv.app.models.Channel;
 import com.bdtv.app.utils.ChannelManager;
 import com.bdtv.app.utils.WatchHistoryManager;
+import com.bdtv.app.utils.PlaylistManager;
 import com.bumptech.glide.Glide;
 import java.util.ArrayList;
 import java.util.List;
@@ -83,8 +84,9 @@ public class PlayerActivity extends AppCompatActivity {
         streamUrl    = getIntent().getStringExtra("stream_url");
         logoUrl      = getIntent().getStringExtra("logo_url");
         currentIndex = getIntent().getIntExtra("channel_index", 0);
+        String playlistId = getIntent().getStringExtra("playlist_id");
 
-        channelList = channelManager.getCachedChannels();
+        channelList = loadChannelListForPlaylist(playlistId);
         if (channelList.isEmpty()) {
             channelList.add(new Channel(channelName, streamUrl, logoUrl, "", ""));
             currentIndex = 0;
@@ -302,6 +304,30 @@ public class PlayerActivity extends AppCompatActivity {
     private void resetHideTimer() {
         hideHandler.removeCallbacks(hideOverlayRunnable);
         hideHandler.postDelayed(hideOverlayRunnable, OVERLAY_TIMEOUT);
+    }
+
+
+    // Playlist অনুযায়ী সঠিক channel list লোড
+    private List<Channel> loadChannelListForPlaylist(String playlistId) {
+        PlaylistManager pm = PlaylistManager.getInstance(this);
+        ChannelManager cm  = ChannelManager.getInstance(this);
+        if (playlistId == null || playlistId.equals(PlaylistManager.ID_ALL))
+            return cm.getCachedChannels();
+        if (playlistId.equals(PlaylistManager.ID_WORLDCUP))
+            return ChannelManager.getWorldCupChannels();
+        if (playlistId.equals(PlaylistManager.ID_FAVORITES))
+            return cm.filterByCategory(cm.getCachedChannels(), "Favorites");
+        if (playlistId.equals(PlaylistManager.ID_BANGLADESH))
+            return cm.filterByCategory(cm.getCachedChannels(), "Bangladesh");
+        if (playlistId.equals(PlaylistManager.ID_INDIA))
+            return cm.filterByCategory(cm.getCachedChannels(), "India");
+        if (playlistId.equals(PlaylistManager.ID_ISLAMIC))
+            return cm.filterByCategory(cm.getCachedChannels(), "Islamic");
+        if (playlistId.equals(PlaylistManager.ID_INTL))
+            return cm.filterByCategory(cm.getCachedChannels(), "International");
+        // Custom playlist
+        List<Channel> custom = pm.getChannelsForPlaylist(playlistId);
+        return custom.isEmpty() ? cm.getCachedChannels() : custom;
     }
 
     private void initPlayer(String url) {

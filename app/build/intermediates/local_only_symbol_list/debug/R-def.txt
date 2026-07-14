@@ -16,6 +16,8 @@ color chip_text_selector
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
+color divider_color
+color playlist_bg
 color text_primary
 color text_secondary
 drawable add_playlist_btn_bg
@@ -36,7 +38,9 @@ drawable gradient_top
 drawable ic_add_playlist
 drawable ic_arrow_back
 drawable ic_aspect_ratio
+drawable ic_copy
 drawable ic_delete
+drawable ic_edit
 drawable ic_favorite_border
 drawable ic_favorite_filled
 drawable ic_fullscreen
@@ -58,8 +62,12 @@ id bottomOverlay
 id btnAddPlaylist
 id btnAspectRatio
 id btnBack
+id btnChangePin
 id btnClearUrl
+id btnCopyUrl
 id btnDeletePlaylist
+id btnDeleteSaved
+id btnEditUrl
 id btnFavorite
 id btnNext
 id btnPasteUrl
@@ -74,6 +82,7 @@ id etPlaylistName
 id etPlaylistUrl
 id ivChannelLogo
 id ivFavorite
+id llSavedPlaylists
 id loadingLayout
 id loadingOverlay
 id playerView
@@ -91,10 +100,11 @@ id tvCategory
 id tvChannelCount
 id tvChannelName
 id tvCountryBadge
-id tvHint
 id tvPlaylistEmoji
 id tvPlaylistName
 id tvPlaylistTitle
+id tvSavedName
+id tvSavedUrl
 id tvStatus
 layout activity_main
 layout activity_player
@@ -105,6 +115,7 @@ layout dialog_add_playlist
 layout dialog_pin
 layout item_channel
 layout item_playlist
+layout item_saved_playlist
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round

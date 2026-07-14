@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark Mode -->
+    <color name="bg_dark">#0D0D0D</color>
+    <color name="bg_surface">#1A1A2E</color>
+    <color name="bg_card">#16213E</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#99FFFFFF</color>
+
+    <!-- Accent (উভয় মোডে একই) -->
+    <color name="accent_green">#00C896</color>
+    <color name="accent_red">#FF4757</color>
+    <color name="accent_blue">#4ECDC4</color>
+    <color name="accent_gold">#FFD700</color>
+
+    <!-- Badge Colors -->
+    <color name="badge_bd">#006A4E</color>
+    <color name="badge_in">#FF9933</color>
+    <color name="badge_islamic">#1B5E20</color>
+    <color name="badge_intl">#1565C0</color>
+
+    <!-- Primary Theme -->
+    <color name="colorPrimary">#1A1A2E</color>
+    <color name="colorPrimaryDark">#0D0D0D</color>
+    <color name="colorAccent">#00C896</color>
+
+    <!-- Playlist panel -->
+    <color name="playlist_bg">#16213E</color>
+    <color name="divider_color">#33FFFFFF</color>
+</resources>

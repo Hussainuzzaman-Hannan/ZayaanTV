@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/card_bg"
+    android:layout_marginBottom="10dp"
+    android:padding="12dp">
+
+    <!-- নাম ও বাটন -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvSavedName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!-- Copy URL -->
+        <ImageButton
+            android:id="@+id/btnCopyUrl"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_copy"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:tint="#8800C896" />
+
+        <!-- Edit -->
+        <ImageButton
+            android:id="@+id/btnEditUrl"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_edit"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:tint="#88FFD700" />
+
+        <!-- Delete -->
+        <ImageButton
+            android:id="@+id/btnDeleteSaved"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_delete"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:tint="#88FF4757" />
+
+    </LinearLayout>
+
+    <!-- URL -->
+    <TextView
+        android:id="@+id/tvSavedUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#66FFFFFF"
+        android:textSize="11sp"
+        android:maxLines="1"
+        android:ellipsize="middle"
+        android:layout_marginTop="4dp"
+        android:fontFamily="monospace" />
+
+</LinearLayout>

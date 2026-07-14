@@ -1465,6 +1465,7 @@ color dim_foreground_disabled_material_dark
 color dim_foreground_disabled_material_light
 color dim_foreground_material_dark
 color dim_foreground_material_light
+color divider_color
 color error_color_material_dark
 color error_color_material_light
 color exo_black_opacity_60
@@ -2133,6 +2134,7 @@ color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
 color notification_material_background_media_default_color
+color playlist_bg
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -3182,7 +3184,9 @@ drawable ic_arrow_back_black_24
 drawable ic_aspect_ratio
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
+drawable ic_copy
 drawable ic_delete
+drawable ic_edit
 drawable ic_favorite_border
 drawable ic_favorite_filled
 drawable ic_fullscreen
@@ -3387,8 +3391,12 @@ id bounceStart
 id btnAddPlaylist
 id btnAspectRatio
 id btnBack
+id btnChangePin
 id btnClearUrl
+id btnCopyUrl
 id btnDeletePlaylist
+id btnDeleteSaved
+id btnEditUrl
 id btnFavorite
 id btnNext
 id btnPasteUrl
@@ -3599,6 +3607,7 @@ id line3
 id linear
 id listMode
 id list_item
+id llSavedPlaylists
 id loadingLayout
 id loadingOverlay
 id m3_side_sheet
@@ -3857,10 +3866,11 @@ id tvCategory
 id tvChannelCount
 id tvChannelName
 id tvCountryBadge
-id tvHint
 id tvPlaylistEmoji
 id tvPlaylistName
 id tvPlaylistTitle
+id tvSavedName
+id tvSavedUrl
 id tvStatus
 id unchecked
 id uniform
@@ -4039,6 +4049,7 @@ layout exo_styled_sub_settings_list_item
 layout exo_track_selection_dialog
 layout item_channel
 layout item_playlist
+layout item_saved_playlist
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

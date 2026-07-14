@@ -8,6 +8,8 @@
         <item name="android:windowBackground">@color/bg_dark</item>
         <item name="android:statusBarColor">@color/bg_surface</item>
         <item name="android:navigationBarColor">@color/bg_dark</item>
+        <!-- Light মোডে status bar icon dark করো -->
+        <item name="android:windowLightStatusBar">true</item>
     </style>
 
     <style name="Theme.BDTVApp.Splash" parent="Theme.BDTVApp">
@@ -20,13 +22,13 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:statusBarColor">#00000000</item>
         <item name="android:navigationBarColor">#00000000</item>
+        <item name="android:windowLightStatusBar">false</item>
     </style>
 
-    <!-- শুধু এই নতুন style টুকু যোগ হয়েছে -->
     <style name="DarkDialog" parent="Theme.MaterialComponents.Dialog">
-        <item name="android:background">#1A1A2E</item>
+        <item name="android:background">@color/bg_surface</item>
         <item name="colorPrimary">@color/accent_green</item>
-        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textColor">@color/text_primary</item>
         <item name="colorAccent">@color/accent_green</item>
     </style>
 

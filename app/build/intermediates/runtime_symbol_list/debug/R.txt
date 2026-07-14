@@ -1464,6 +1464,7 @@ int color dim_foreground_disabled_material_dark 0x7f060063
 int color dim_foreground_disabled_material_light 0x7f060064
 int color dim_foreground_material_dark 0x7f060065
 int color dim_foreground_material_light 0x7f060066
+int color divider_color 0x7f06031b
 int color error_color_material_dark 0x7f060067
 int color error_color_material_light 0x7f060068
 int color exo_black_opacity_60 0x7f060069
@@ -2132,6 +2133,7 @@ int color mtrl_textinput_hovered_box_stroke_color 0x7f0602ff
 int color notification_action_color_filter 0x7f060300
 int color notification_icon_bg_color 0x7f060301
 int color notification_material_background_media_default_color 0x7f060302
+int color playlist_bg 0x7f06031c
 int color primary_dark_material_dark 0x7f060303
 int color primary_dark_material_light 0x7f060304
 int color primary_material_dark 0x7f060305
@@ -3181,7 +3183,9 @@ int drawable ic_arrow_back_black_24 0x7f0800e4
 int drawable ic_aspect_ratio 0x7f0800e5
 int drawable ic_clear_black_24 0x7f0800e6
 int drawable ic_clock_black_24dp 0x7f0800e7
+int drawable ic_copy 0x7f08014f
 int drawable ic_delete 0x7f08014c
+int drawable ic_edit 0x7f080150
 int drawable ic_favorite_border 0x7f0800e8
 int drawable ic_favorite_filled 0x7f0800e9
 int drawable ic_fullscreen 0x7f0800ea
@@ -3386,8 +3390,12 @@ int id bounceStart 0x7f0a0063
 int id btnAddPlaylist 0x7f0a0253
 int id btnAspectRatio 0x7f0a0064
 int id btnBack 0x7f0a0065
+int id btnChangePin 0x7f0a025d
 int id btnClearUrl 0x7f0a0066
+int id btnCopyUrl 0x7f0a025e
 int id btnDeletePlaylist 0x7f0a0254
+int id btnDeleteSaved 0x7f0a025f
+int id btnEditUrl 0x7f0a0260
 int id btnFavorite 0x7f0a0067
 int id btnNext 0x7f0a0068
 int id btnPasteUrl 0x7f0a0069
@@ -3598,6 +3606,7 @@ int id line3 0x7f0a0134
 int id linear 0x7f0a0135
 int id listMode 0x7f0a0136
 int id list_item 0x7f0a0137
+int id llSavedPlaylists 0x7f0a0261
 int id loadingLayout 0x7f0a0138
 int id loadingOverlay 0x7f0a0139
 int id m3_side_sheet 0x7f0a013a
@@ -3856,10 +3865,11 @@ int id tvCategory 0x7f0a0234
 int id tvChannelCount 0x7f0a0259
 int id tvChannelName 0x7f0a0235
 int id tvCountryBadge 0x7f0a0236
-int id tvHint 0x7f0a0237
 int id tvPlaylistEmoji 0x7f0a025a
 int id tvPlaylistName 0x7f0a025b
 int id tvPlaylistTitle 0x7f0a025c
+int id tvSavedName 0x7f0a0262
+int id tvSavedUrl 0x7f0a0263
 int id tvStatus 0x7f0a0238
 int id unchecked 0x7f0a0239
 int id uniform 0x7f0a023a
@@ -4038,6 +4048,7 @@ int layout exo_styled_sub_settings_list_item 0x7f0d003a
 int layout exo_track_selection_dialog 0x7f0d003b
 int layout item_channel 0x7f0d003c
 int layout item_playlist 0x7f0d0084
+int layout item_saved_playlist 0x7f0d0085
 int layout m3_alert_dialog 0x7f0d003d
 int layout m3_alert_dialog_actions 0x7f0d003e
 int layout m3_alert_dialog_title 0x7f0d003f
