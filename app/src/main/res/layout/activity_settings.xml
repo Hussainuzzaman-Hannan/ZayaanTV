@@ -41,7 +41,6 @@
                 android:textSize="12sp"
                 android:layout_marginBottom="12dp" />
 
-            <!-- Dynamic list — Java থেকে populate হবে -->
             <LinearLayout
                 android:id="@+id/llSavedPlaylists"
                 android:layout_width="match_parent"
@@ -52,7 +51,7 @@
             <View android:layout_width="match_parent" android:layout_height="1dp"
                 android:background="#22FFFFFF" android:layout_marginVertical="20dp" />
 
-            <!-- ② Quick URL যোগ -->
+            <!-- ③ Quick URL যোগ -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -113,7 +112,40 @@
             <View android:layout_width="match_parent" android:layout_height="1dp"
                 android:background="#22FFFFFF" android:layout_marginBottom="20dp" />
 
-            <!-- ③ Parental Control -->
+            <!-- ② Channel Health Check (একটাই সেকশন) -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔍 Channel Health Check"
+                android:textColor="@color/accent_green"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="সব চ্যানেল একসাথে পরীক্ষা করে বন্ধ চ্যানেলগুলো বাদ দেবে। ইন্টারনেট কানেকশন ভালো থাকলে ভালো ফলাফল পাবেন। ২৫০০+ চ্যানেলের জন্য কয়েক মিনিট সময় লাগতে পারে।"
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="12sp"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:id="@+id/btnHealthCheck"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="🔍 বন্ধ চ্যানেল খুঁজুন ও বাদ দিন"
+                android:backgroundTint="#221565C0"
+                android:textColor="#4ECDC4"
+                android:textStyle="bold"
+                android:layout_marginBottom="24dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="@color/divider_color" android:layout_marginBottom="20dp" />
+
+            <!-- ④ Parental Control -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -142,7 +174,7 @@
             <View android:layout_width="match_parent" android:layout_height="1dp"
                 android:background="#22FFFFFF" android:layout_marginBottom="20dp" />
 
-            <!-- ④ অ্যাপ তথ্য -->
+            <!-- ⑤ অ্যাপ তথ্য -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

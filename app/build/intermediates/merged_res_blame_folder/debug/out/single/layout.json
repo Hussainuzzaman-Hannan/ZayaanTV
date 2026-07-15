@@ -4,28 +4,32 @@
         "source": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-main-39:\\layout\\activity_player.xml"
     },
     {
-        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-mergeDebugResources-36:\\layout\\custom_player_controls.xml",
-        "source": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-main-39:\\layout\\custom_player_controls.xml"
-    },
-    {
-        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-mergeDebugResources-36:\\layout\\item_saved_playlist.xml",
-        "source": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-main-39:\\layout\\item_saved_playlist.xml"
-    },
-    {
-        "merged": "com.bdtv.app-mergeDebugResources-36:/layout/activity_main.xml",
-        "source": "com.bdtv.app-main-39:/layout/activity_main.xml"
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-mergeDebugResources-36:\\layout\\dialog_channel_test.xml",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-main-39:\\layout\\dialog_channel_test.xml"
     },
     {
         "merged": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-mergeDebugResources-36:\\layout\\dialog_add_playlist.xml",
         "source": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-main-39:\\layout\\dialog_add_playlist.xml"
     },
     {
-        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-mergeDebugResources-36:\\layout\\activity_splash.xml",
-        "source": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-main-39:\\layout\\activity_splash.xml"
-    },
-    {
         "merged": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-mergeDebugResources-36:\\layout\\activity_settings.xml",
         "source": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-main-39:\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-mergeDebugResources-36:\\layout\\custom_player_controls.xml",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-main-39:\\layout\\custom_player_controls.xml"
+    },
+    {
+        "merged": "com.bdtv.app-mergeDebugResources-36:/layout/item_saved_playlist.xml",
+        "source": "com.bdtv.app-main-39:/layout/item_saved_playlist.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-mergeDebugResources-36:\\layout\\item_saved_playlist.xml",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-main-39:\\layout\\item_saved_playlist.xml"
+    },
+    {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-mergeDebugResources-36:\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-main-39:\\layout\\activity_splash.xml"
     },
     {
         "merged": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-mergeDebugResources-36:\\layout\\activity_main.xml",

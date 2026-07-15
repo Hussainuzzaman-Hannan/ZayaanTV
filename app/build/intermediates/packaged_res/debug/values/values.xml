@@ -35,6 +35,14 @@
         <item name="android:textColor">@color/text_primary</item>
         <item name="colorAccent">@color/accent_green</item>
     </style>
+    <style name="NoAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+    </style>
     <style name="Theme.BDTVApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -42,8 +50,9 @@
         <item name="android:windowBackground">@color/bg_dark</item>
         <item name="android:statusBarColor">@color/bg_surface</item>
         <item name="android:navigationBarColor">@color/bg_dark</item>
-        
         <item name="android:windowLightStatusBar">true</item>
+        
+        <item name="android:windowAnimationStyle">@style/NoAnimation</item>
     </style>
     <style name="Theme.BDTVApp.Player" parent="Theme.BDTVApp">
         <item name="android:windowFullscreen">true</item>

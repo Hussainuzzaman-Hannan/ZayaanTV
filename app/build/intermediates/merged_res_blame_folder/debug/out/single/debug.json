@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-merged_res-37:\\layout_dialog_channel_test.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-main-39:\\layout\\dialog_channel_test.xml"
+    },
+    {
         "merged": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-merged_res-37:\\layout_item_saved_playlist.xml.flat",
         "source": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-main-39:\\layout\\item_saved_playlist.xml"
     },
@@ -32,10 +36,6 @@
         "source": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-main-39:\\drawable\\ic_pause.xml"
     },
     {
-        "merged": "com.bdtv.app-merged_res-37:/layout_activity_main.xml.flat",
-        "source": "com.bdtv.app-main-39:/layout/activity_main.xml"
-    },
-    {
         "merged": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-merged_res-37:\\drawable_gradient_bottom.xml.flat",
         "source": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-main-39:\\drawable\\gradient_bottom.xml"
     },
@@ -62,10 +62,6 @@
     {
         "merged": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-merged_res-37:\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
         "source": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-main-39:\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
-    },
-    {
-        "merged": "com.bdtv.app-merged_res-37:/drawable_badge_count.xml.flat",
-        "source": "com.bdtv.app-main-39:/drawable/badge_count.xml"
     },
     {
         "merged": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-merged_res-37:\\drawable_badge_count.xml.flat",
@@ -116,8 +112,8 @@
         "source": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-main-39:\\drawable\\gradient_top.xml"
     },
     {
-        "merged": "com.bdtv.app-merged_res-37:/drawable_playlist_item_selected.xml.flat",
-        "source": "com.bdtv.app-main-39:/drawable/playlist_item_selected.xml"
+        "merged": "com.bdtv.app-merged_res-37:/layout_item_saved_playlist.xml.flat",
+        "source": "com.bdtv.app-main-39:/layout/item_saved_playlist.xml"
     },
     {
         "merged": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-merged_res-37:\\drawable_ic_skip_previous.xml.flat",
@@ -208,16 +204,12 @@
         "source": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-main-39:\\drawable\\search_bg.xml"
     },
     {
-        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-merged_res-37:\\drawable_playlist_item_bg.xml.flat",
-        "source": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-main-39:\\drawable\\playlist_item_bg.xml"
-    },
-    {
         "merged": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-merged_res-37:\\drawable_playlist_item_selected.xml.flat",
         "source": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-main-39:\\drawable\\playlist_item_selected.xml"
     },
     {
-        "merged": "com.bdtv.app-merged_res-37:/drawable_card_bg.xml.flat",
-        "source": "com.bdtv.app-main-39:/drawable/card_bg.xml"
+        "merged": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-merged_res-37:\\drawable_playlist_item_bg.xml.flat",
+        "source": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-main-39:\\drawable\\playlist_item_bg.xml"
     },
     {
         "merged": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-merged_res-37:\\drawable_ic_tv_placeholder.xml.flat",
@@ -226,10 +218,6 @@
     {
         "merged": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-merged_res-37:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-main-39:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-    },
-    {
-        "merged": "com.bdtv.app-merged_res-37:/drawable_search_bg.xml.flat",
-        "source": "com.bdtv.app-main-39:/drawable/search_bg.xml"
     },
     {
         "merged": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-merged_res-37:\\drawable_chip_bg_selector.xml.flat",
@@ -254,10 +242,6 @@
     {
         "merged": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-merged_res-37:\\layout_activity_splash.xml.flat",
         "source": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-main-39:\\layout\\activity_splash.xml"
-    },
-    {
-        "merged": "com.bdtv.app-merged_res-37:/drawable_add_playlist_btn_bg.xml.flat",
-        "source": "com.bdtv.app-main-39:/drawable/add_playlist_btn_bg.xml"
     },
     {
         "merged": "C:\\Users\\kanda\\.gradle\\daemon\\8.2\\com.bdtv.app-merged_res-37:\\mipmap-hdpi_ic_launcher.png.flat",

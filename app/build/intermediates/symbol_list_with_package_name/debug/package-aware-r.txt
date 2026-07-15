@@ -3398,6 +3398,7 @@ id btnDeletePlaylist
 id btnDeleteSaved
 id btnEditUrl
 id btnFavorite
+id btnHealthCheck
 id btnNext
 id btnPasteUrl
 id btnPip
@@ -3405,6 +3406,7 @@ id btnPlayPause
 id btnPrevious
 id btnQuality
 id btnSaveUrl
+id btnTestPlaylist
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3729,6 +3731,7 @@ id position
 id postLayout
 id pressed
 id progressBar
+id progressBarTest
 id progress_circular
 id progress_horizontal
 id radio
@@ -3861,17 +3864,21 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tvAspectLabel
+id tvBrokenCount
 id tvBuffering
 id tvCategory
 id tvChannelCount
 id tvChannelName
 id tvCountryBadge
+id tvCurrentChannel
 id tvPlaylistEmoji
 id tvPlaylistName
 id tvPlaylistTitle
 id tvSavedName
 id tvSavedUrl
 id tvStatus
+id tvTestStatus
+id tvWorkingCount
 id unchecked
 id uniform
 id unlabeled
@@ -4036,6 +4043,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dialog_add_playlist
+layout dialog_channel_test
 layout dialog_pin
 layout exo_legacy_player_control_view
 layout exo_list_divider
@@ -4692,6 +4700,7 @@ style MaterialAlertDialog_MaterialComponents_Title_Panel
 style MaterialAlertDialog_MaterialComponents_Title_Panel_CenterStacked
 style MaterialAlertDialog_MaterialComponents_Title_Text
 style MaterialAlertDialog_MaterialComponents_Title_Text_CenterStacked
+style NoAnimation
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_MaterialComponents

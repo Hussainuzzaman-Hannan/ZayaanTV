@@ -65,8 +65,9 @@ public class MainActivity extends AppCompatActivity implements ChannelAdapter.On
         // থিম restore করো
         isDarkTheme = getSharedPreferences("bdtv_prefs", MODE_PRIVATE)
                 .getBoolean("is_dark_theme", true);
-        AppCompatDelegate.setDefaultNightMode(isDarkTheme
-                ? AppCompatDelegate.MODE_NIGHT_YES : AppCompatDelegate.MODE_NIGHT_NO);
+        AppCompatDelegate.setDefaultNightMode(
+                isDarkTheme ? AppCompatDelegate.MODE_NIGHT_YES : AppCompatDelegate.MODE_NIGHT_NO
+        );
 
         channelManager  = ChannelManager.getInstance(this);
         playlistManager = PlaylistManager.getInstance(this);
@@ -282,17 +283,79 @@ public class MainActivity extends AppCompatActivity implements ChannelAdapter.On
     private void updateCount(int count) { tvPlaylistTitle.setText(count + " টি চ্যানেল"); }
 
 
+    private void applyThemeColors() {
+        int bgDark    = isDarkTheme ? 0xFF0D0D0D : 0xFFF2F4F7;
+        int bgSurface = isDarkTheme ? 0xFF1A1A2E : 0xFFFFFFFF;
+        int bgPanel   = isDarkTheme ? 0xFF16213E : 0xFFEFEFEF;
+        int textPri   = isDarkTheme ? 0xFFFFFFFF : 0xFF0D0D0D;
+        int textSec   = isDarkTheme ? 0x99FFFFFF : 0xFF555555;
+        int divider   = isDarkTheme ? 0x33FFFFFF : 0xFFCCCCCC;
+
+        // Root background
+        findViewById(android.R.id.content).setBackgroundColor(bgDark);
+
+        // Toolbar + top bar
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        if (toolbar != null) {
+            toolbar.setBackgroundColor(bgSurface);
+            toolbar.setTitleTextColor(textPri);
+            // Toolbar এর সব TextView text color বদলাও
+            for (int i = 0; i < toolbar.getChildCount(); i++) {
+                View child = toolbar.getChildAt(i);
+                if (child instanceof TextView) ((TextView) child).setTextColor(textPri);
+            }
+        }
+
+        // Top bar (SearchView এর parent LinearLayout)
+        View topBar = toolbar != null ? (View) toolbar.getParent() : null;
+        if (topBar != null) topBar.setBackgroundColor(bgSurface);
+
+        // Playlist panel background
+        if (rvPlaylists != null) {
+            View panel = (View) rvPlaylists.getParent();
+            if (panel != null) panel.setBackgroundColor(bgPanel);
+        }
+
+        // Status & navigation bar
+        getWindow().setStatusBarColor(bgSurface);
+        getWindow().setNavigationBarColor(bgDark);
+
+        // Light মোডে status bar icon dark করো
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
+            int flags = getWindow().getDecorView().getSystemUiVisibility();
+            if (!isDarkTheme) {
+                flags |= android.view.View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR;
+            } else {
+                flags &= ~android.view.View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR;
+            }
+            getWindow().getDecorView().setSystemUiVisibility(flags);
+        }
+
+        // Adapter refresh — item layout @color/text_primary ব্যবহার করে তাই
+        // শুধু notifyDataSetChanged() যথেষ্ট নয়, RecyclerView পুনরায় inflate করতে হবে
+        if (channelAdapter != null) channelAdapter.notifyDataSetChanged();
+        if (playlistAdapter != null) playlistAdapter.notifyDataSetChanged();
+
+        // RecyclerView cache clear করো যাতে নতুন color দেখায়
+        if (recyclerView != null) recyclerView.getRecycledViewPool().clear();
+        if (rvPlaylists != null) rvPlaylists.getRecycledViewPool().clear();
+    }
+
     private void toggleTheme() {
         isDarkTheme = !isDarkTheme;
+        getSharedPreferences("bdtv_prefs", MODE_PRIVATE)
+                .edit().putBoolean("is_dark_theme", isDarkTheme).apply();
+
         int mode = isDarkTheme
                 ? AppCompatDelegate.MODE_NIGHT_YES
                 : AppCompatDelegate.MODE_NIGHT_NO;
+
+        // ঝিলিক বন্ধ করতে — recreate animation disable করো
+        getWindow().setWindowAnimations(0);
         AppCompatDelegate.setDefaultNightMode(mode);
-        // Preference সেভ করো
-        getSharedPreferences("bdtv_prefs", MODE_PRIVATE)
-                .edit().putBoolean("is_dark_theme", isDarkTheme).apply();
+
         Toast.makeText(this,
-                isDarkTheme ? "🌙 Dark Mode" : "☀️ Light Mode",
+                isDarkTheme ? "🌙 Dark Mode চালু" : "☀️ Light Mode চালু",
                 Toast.LENGTH_SHORT).show();
     }
 

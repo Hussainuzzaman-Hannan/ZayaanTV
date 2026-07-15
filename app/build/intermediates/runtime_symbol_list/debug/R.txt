@@ -3397,6 +3397,7 @@ int id btnDeletePlaylist 0x7f0a0254
 int id btnDeleteSaved 0x7f0a025f
 int id btnEditUrl 0x7f0a0260
 int id btnFavorite 0x7f0a0067
+int id btnHealthCheck 0x7f0a0265
 int id btnNext 0x7f0a0068
 int id btnPasteUrl 0x7f0a0069
 int id btnPip 0x7f0a006a
@@ -3404,6 +3405,7 @@ int id btnPlayPause 0x7f0a006b
 int id btnPrevious 0x7f0a006c
 int id btnQuality 0x7f0a006d
 int id btnSaveUrl 0x7f0a006e
+int id btnTestPlaylist 0x7f0a026b
 int id buttonPanel 0x7f0a006f
 int id cache_measures 0x7f0a0070
 int id callMeasure 0x7f0a0071
@@ -3728,6 +3730,7 @@ int id position 0x7f0a01ad
 int id postLayout 0x7f0a01ae
 int id pressed 0x7f0a01af
 int id progressBar 0x7f0a01b0
+int id progressBarTest 0x7f0a0266
 int id progress_circular 0x7f0a01b1
 int id progress_horizontal 0x7f0a01b2
 int id radio 0x7f0a01b3
@@ -3860,17 +3863,21 @@ int id transition_scene_layoutid_cache 0x7f0a022f
 int id transition_transform 0x7f0a0230
 int id triangle 0x7f0a0231
 int id tvAspectLabel 0x7f0a0232
+int id tvBrokenCount 0x7f0a0267
 int id tvBuffering 0x7f0a0233
 int id tvCategory 0x7f0a0234
 int id tvChannelCount 0x7f0a0259
 int id tvChannelName 0x7f0a0235
 int id tvCountryBadge 0x7f0a0236
+int id tvCurrentChannel 0x7f0a0268
 int id tvPlaylistEmoji 0x7f0a025a
 int id tvPlaylistName 0x7f0a025b
 int id tvPlaylistTitle 0x7f0a025c
 int id tvSavedName 0x7f0a0262
 int id tvSavedUrl 0x7f0a0263
 int id tvStatus 0x7f0a0238
+int id tvTestStatus 0x7f0a0269
+int id tvWorkingCount 0x7f0a026a
 int id unchecked 0x7f0a0239
 int id uniform 0x7f0a023a
 int id unlabeled 0x7f0a023b
@@ -4035,6 +4042,7 @@ int layout design_navigation_menu_item 0x7f0d002e
 int layout design_text_input_end_icon 0x7f0d002f
 int layout design_text_input_start_icon 0x7f0d0030
 int layout dialog_add_playlist 0x7f0d0083
+int layout dialog_channel_test 0x7f0d0086
 int layout dialog_pin 0x7f0d0031
 int layout exo_legacy_player_control_view 0x7f0d0032
 int layout exo_list_divider 0x7f0d0033
@@ -4691,6 +4699,7 @@ int style MaterialAlertDialog_MaterialComponents_Title_Panel 0x7f120153
 int style MaterialAlertDialog_MaterialComponents_Title_Panel_CenterStacked 0x7f120154
 int style MaterialAlertDialog_MaterialComponents_Title_Text 0x7f120155
 int style MaterialAlertDialog_MaterialComponents_Title_Text_CenterStacked 0x7f120156
+int style NoAnimation 0x7f120485
 int style Platform_AppCompat 0x7f120157
 int style Platform_AppCompat_Light 0x7f120158
 int style Platform_MaterialComponents 0x7f120159
