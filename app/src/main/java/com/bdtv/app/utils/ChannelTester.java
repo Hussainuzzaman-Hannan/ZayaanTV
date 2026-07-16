@@ -22,15 +22,15 @@ public class ChannelTester {
     }
 
     private static final OkHttpClient client = new OkHttpClient.Builder()
-            .connectTimeout(5, TimeUnit.SECONDS)
-            .readTimeout(5, TimeUnit.SECONDS)
+            .connectTimeout(4, TimeUnit.SECONDS)
+            .readTimeout(4, TimeUnit.SECONDS)
             .build();
 
     private static final Handler mainHandler = new Handler(Looper.getMainLooper());
     private volatile boolean cancelled = false;
     private ExecutorService executor;
 
-    private static final int THREAD_COUNT = 10;
+    private static final int THREAD_COUNT = 30;
 
     public void testChannels(List<Channel> channels, TestCallback callback) {
         cancelled = false;
